@@ -5,7 +5,7 @@ from numpy import memmap
 
 # load shared array
 def task(filename, n):
-    # load the memory mapped file
+    # load the memory-mapped file
     data = memmap(filename,
         dtype='float32', mode='r+', shape=(n,))
     # check the status of the data
@@ -23,7 +23,7 @@ if __name__ == '__main__':
     n = 1000
     # define the filename
     filename = 'data.np'
-    # create the memory mapped file
+    # create the memory-mapped file
     data = memmap(filename,
         dtype='float32', mode='w+', shape=(n,))
     # populate the array

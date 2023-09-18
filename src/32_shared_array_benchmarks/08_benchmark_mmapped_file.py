@@ -6,7 +6,7 @@ from numpy import memmap
 
 # task executed in a child process
 def task(filename, n):
-    # load the memory mapped file
+    # load the memory-mapped file
     data = memmap(filename,
         dtype='float32', mode='r+', shape=(n,))
     # report details of data
@@ -18,7 +18,7 @@ def main():
     n = 100000000
     # define the filename
     filename = 'data.np'
-    # create the memory mapped file
+    # create the memory-mapped file
     data = memmap(filename,
         dtype='float32', mode='w+', shape=(n,))
     # populate the array

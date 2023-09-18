@@ -8,7 +8,7 @@ from numpy.random import SeedSequence
 from numpy.random import default_rng
 
 # create and return an array of random numbers
-def populate(seed, size):
+def create_array(seed, size):
     # create random number generator with the seed
     rand = default_rng(seed)
     # create array of random floats
@@ -28,7 +28,7 @@ with ThreadPoolExecutor(n_workers) as exe:
     size = int(ceil(n / n_workers))
     # issue all tasks and gather results
     sizes = [size for _ in seeds]
-    result_list = list(exe.map(populate, seeds, sizes))
+    result_list = list(exe.map(create_array, seeds, sizes))
     # convert list of arrays into one large array
     result = concatenate(result_list)
 # calculate and report duration
