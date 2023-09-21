@@ -19,11 +19,17 @@ You can access all Python .py files directly here:
 
 You can learn more about the book here:
 
-* Coming soon...
+* [SuperFastPython](https://superfastpython.com/concurrent-numpy-in-python)
+* [Gumroad](https://superfastpython.gumroad.com/l/pcn)
+* [Amazon Kindle](https://amzn.to/3ZpkYeY)
+* [Amazon Paperback](https://amzn.to/3taqcz5)
+* [Google Books](https://books.google.com.au/books/about?id=2EvYEAAAQBAJ)
+* [Google Play](https://play.google.com/store/books/details?id=2EvYEAAAQBAJ)
+* [Goodreads](https://www.goodreads.com/book/show/199057637-concurrent-numpy-in-python)
 
 ### Book Blurb
 
-> Concurrency in NumPy was not an afterthought, but using the wrong type can be fatal.
+> Concurrency in NumPy is not an afterthought.
 >
 > * Discover matrix multiplication that is 2.7x faster.
 > * Discover array initialization that is up to 3.2x faster.
